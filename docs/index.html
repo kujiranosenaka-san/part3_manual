@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>催眠一本：hypnoticthrow PART3 Manual</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body { font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; color: #1f2328; background: #fff; }
+    .layout { display: flex; height: 100%; }
+    nav { width: 300px; flex: 0 0 300px; background: #f6f8fa; border-right: 1px solid #d0d7de; padding: 24px 16px; overflow: auto; }
+    nav h1 { font-size: 18px; margin: 0 0 16px; }
+    nav button { display: block; width: 100%; text-align: left; background: none; border: 0; color: #24292f; padding: 8px 10px; border-radius: 6px; font-size: 14px; cursor: pointer; }
+    nav button:hover { background: #eaeef2; }
+    nav button.active { background: #ddf4ff; font-weight: 600; }
+    nav .group { margin: 16px 0 6px; padding: 0 10px; font-size: 12px; color: #656d76; }
+    main { flex: 1; overflow: auto; padding: 32px 48px; }
+    .page { display: none; max-width: 820px; }
+    .page.active { display: block; }
+    h2 { margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+    li { margin: 6px 0; }
+    li.q { margin-top: 22px; }
+    img { max-width: 100%; height: auto; }
+
+.translate-box { margin: 18px 10px 8px; padding-top: 14px; border-top: 1px solid #d0d7de; }
+.gt { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #d0d7de; color: #24292f; padding: 8px 10px; border-radius: 6px; font-size: 14px; cursor: pointer; margin-bottom: 6px; }
+.gt:hover { background: #eaeef2; }
+#google_translate_element { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.goog-te-banner-frame, .skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+.file-name {
+    display: inline-block;
+    padding: 2px 7px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.policy {
+  border-left: 4px solid #aaa;
+  padding-left: 15px;
+  margin-left: 0;
+}
+
+.policy ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+    
+    @media (max-width: 800px) {
+      .layout { display: block; height: auto; }
+      nav { width: auto; border-right: 0; border-bottom: 1px solid #d0d7de; }
+      main { padding: 20px 16px 48px; }
+      .page { scroll-margin-top: 12px; }
+    }
+  </style>
+
+  
+<meta property="og:title" content="催眠一本：Hypnoticthrow Part 3 — Official Manual">
+<meta property="og:description" content="パート3発売に関するご案内やインストールガイドなどを掲載しています。Part 3 release information, installation guide, and more.">
+<meta property="og:url" content="https://kujiranosenaka-san.github.io/hypnoticthrow_part3_manual/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://kujiranosenaka-san.github.io/hypnoticthrow_part3_manual/thumb.png">
+
+  
+</head>
+<body>
+  <div class="layout">
+    <nav>
+      <h1>催眠一本：hypnoticthrow PART3 Manual</h1>
+      <div class="group">日本語</div>
+      <button data-page="ja-notice" class="active">📢必ずお読みください</button>
+      <button data-page="ja-caution">⚠️注意事項</button>
+      <button data-page="ja-install">🛠️ゲームのインストール・アップデート方法</button>
+      <button data-page="ja">📄既存ゲームのアップデートまとめ</button>
+      <button data-page="ja-uncensored">🔞無修正版の販売終了に関するご案内</button>
+      <button data-page="ja-branch">🔀ストーリーの分岐について</button>
+
+      <button data-page="ja-events">🔓各Partの全イベント発生条件について</button>
+      <button data-page="ja-support">❓お問い合わせ・サポート</button>
+      <div class="group">English</div>
+      <button data-page="en-notice">📢Please read</button>
+      <button data-page="en-caution">⚠️Advisory Caution</button>
+      <button data-page="en-install">🛠️Game Installation &amp; Update Instructions</button>
+      <button data-page="en">📄Summary of Updates to Previous Parts</button>
+      <button data-page="en-uncensored">🔞Discontinuation of the Uncensored Version</button>
+      <button data-page="en-branch">🔀Story Branches</button>
+
+      <button data-page="en-events">🔓Conditions for viewing all events in each Part</button>
+      <button data-page="en-support">❓Inquiries &amp; Support</button>
+      
+<div class="group">FAQ</div>
+<button data-page="faq-ja">日本語</button>
+<button data-page="faq-en">English</button>
+
+
+
+<div class="translate-box">
+  <div class="group">Google Translate</div>
+  <button type="button" class="gt" data-lang="ko">🌐 한국어</button>
+  <button type="button" class="gt" data-lang="zh-CN">🌐 简体中文</button>
+  <button type="button" class="gt" data-lang="zh-TW">🌐 繁體中文</button>
+  <div id="google_translate_element"></div>
+</div>
+
+      
+    </nav>
+    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<section class="page active" id="ja-notice">
+  <h2>📢必ずお読みください</h2>
+    <p style="text-align: center;"><img src="welcome.png" alt="WELCOME" width="420"></p>
+<ul>
+  <li>ゲームをご購入いただき、誠にありがとうございます。販売プラットフォームやFANBOXでは、情報がやや不足している部分がございましたので、ゲームに関する情報を手軽にご確認いただけるマニュアルをご用意いたしました。（本マニュアルはスマートフォンなどのモバイル端末にも対応しています）</li>
+  <li>Part3をプレイするには、Part1・Part2の最新版（2026年10月9日現在）が必要です。旧バージョンのPart1・Part2とは互換性がなく、ゲームは起動しません。必ずPart1・Part2・Part3をすべて最新版に揃えたうえで、以下の手順に従ってインストールしてください。<b>現在、すべてのプラットフォームのPart 1・2は、2026年10月版への更新が完了しています</b>（<a href="https://kujiranosenaka.booth.pm/" target="_blank">BOOTH</a>・<a href="https://bit.ly/kujiranosenaka" target="_blank">DLsite</a>・<a href="https://kujiranosenaka.itch.io/" target="_blank">itch.io</a>）。</li>
+  <li>今後のパートをプレイする際、アップデートやホットフィックスなどにより、以前のパートの最新版を再ダウンロードする必要が生じる場合があります。再ダウンロードできるよう、購入履歴は安全に保管してください。</li>
+</ul>
+</section>
+<section class="page" id="en-notice">
+  <h2>📢Please read</h2>
+      <p style="text-align: center;"><img src="welcome.png" alt="WELCOME" width="420"></p>
+  <ul>
+  <li>Thank you very much for purchasing the game. Information on the sales platforms and FANBOX has been somewhat limited, so a manual has been prepared for easy access to details about the game. Please take a moment to read it. (This manual is also compatible with mobile devices.)</li>
+  <li>To play Part 3, you need the latest versions of Part 1 and Part 2 (as of 9th October, 2026). Older versions are not compatible and the game will not launch. Please make sure Parts 1, 2, and 3 are all up to date and follow the installation guide below. <b>Currently, Part 1 and Part 2 on all platforms have been updated to the 202610 version</b> (<a href="https://kujiranosenaka.booth.pm/" target="_blank">BOOTH</a>, <a href="https://bit.ly/kujiranosenaka" target="_blank">DLsite</a>, and <a href="https://kujiranosenaka.itch.io/" target="_blank">itch.io</a>).</li>
+  <li>Future parts may require you to re-download the latest versions of previous parts due to updates or hotfixes. Please keep your purchase records safe so that you can re-download them. </li>
+</ul>
+</section>
+
+
+<section class="page" id="ja-caution">
+  <h2>⚠️注意事項</h2>
+  <p><img src="r18.png" alt="R-18成人向け" width="200"></p>
+  <ul>
+
+    <li>本作は18歳以上のゲイ向け作品です。未成年者のプレイおよび未成年者への配布・譲渡を禁じます。</li>
+    <li>本作には一部のプレイヤーにとって不快に感じられる可能性のあるテーマが含まれています。プレイ前に本注意事項を必ずお読みください。</li>
+    <li>本作には、男性同士の性的表現、催○、自慰、乳首責め、ぶっかけ、放尿、射精管理、公共の場での性的嫌がらせ・レ○プ、異性愛および同性愛セックス、近○相○、セックス玩具の使用、一部BDSM要素など、18歳未満の方や、ホモフォビア、過激な性描写に抵抗のある方には不適切な表現が多数含まれます。プレイは自己責任でお願いします。</li>
+    <li>武田隼人はノンケ（異性愛者）という設定です。物語の主軸は催○とそれによる変化の過程にあり、一般的なゲイ同士の関係（トップ／ボトムなど）の描写や、恋愛・ボーイズラブ（BL）の要素はありません。</li>
+    <li>物語の演出上、ホモフォビア（同性愛嫌悪的）なセリフや表現が一部含まれています。これらはキャラクターの心情や変化を描くためのフィクション上の演出であり、制作者の思想を反映するものではありません。</li>
+    <li>本作には18歳未満の人物に関する性的・エロティックな描写は一切含まれておらず、実在の人物・団体・地名・事件等とは一切関係のないフィクションです。</li>
+    <li>画面には暗転、揺れるテキスト、フラッシュ・グリッチ効果、スパイラル画像などの演出が含まれます。光過敏性発作のある方はご注意ください。</li>
+    <li>本ソフトウェアの無断複製・転載・配布・インターネット上へのアップロードを禁じます。</li>
+   
+  </ul>
+  <br>
+        <h2>⚠️違法な改造・海賊版への対応</h2>
+  <p>少し気の重い話題に触れることになり、申し訳ありません。</p>
+  <p>本ゲームを無断で翻訳・改変したものが、あるECプラットフォームで許可なく販売されていた事例がありました。この件については、すでに注意喚起を行っており、このような違法に再販売されたものや海賊版に関するお問い合わせやサポートには、一切対応しておりません。 </p>
+  <p><a href="https://kujiranosenaka.booth.pm/" target="_blank">BOOTH</a>・<a href="https://bit.ly/kujiranosenaka" target="_blank">DLsite</a>・<a href="https://kujiranosenaka.itch.io/" target="_blank">itch.io</a>以外で販売・配布されているものは、すべて違法なコピーです。</p>
+  <p>ゲームに関するサポートは、正規の販売プラットフォームを通じて購入された公式版に限らせていただき、不当なお問い合わせや要求が続く場合には、該当ユーザーを運営へ通報したり、アクセス制限などの措置を取る場合があります。</p>
+  <p>皆様のご理解とご協力を心よりお願いいたします。</p>
+</section>
+<section class="page" id="en-caution">
+  <h2>⚠️Advisory Caution</h2>
+  <p><img src="r18.png" alt="R-18成人向け" width="200"></p>
+  <ul>
+
+    <li>This work is intended for gay audience aged 18 and over. Minors are prohibited from playing the game or distributing/transferring it to minors.</li>
+    <li>This work contains themes that may be uncomfortable or disturbing to some players. Please be sure to read these advisory precautions before playing.</li>
+    <li>This work contains numerous expressions that may be inappropriate for persons under 18, as well as for those who are uncomfortable with homophobia or explicit sexual content, including sexual content between men, hypnosis, masturbation, nipple stimulation, ejaculation on the body, urination, ejaculation control, sexual harassment and rape in public places, heterosexual and homosexual sex, incest, the use of sex toys, and some BDSM elements. Please play at your own discretion.</li>
+    <li>Hayato Takeda is a straight (heterosexual) character. The main focus of the story is hypnosis and the process of change resulting from it; there are no depictions of typical relationships between gay men (such as top/bottom dynamics), nor are there any romance or Boys' Love (BL) elements.</li>
+    <li>For narrative purposes, some homophobic lines and expressions are included in the work. These are fictional elements used to portray the characters' emotions and changes, and do not reflect the creator's personal beliefs.</li>
+    <li>This work contains no sexual or erotic depictions involving persons under 18, and is entirely fictional and unrelated to any real persons, organizations, locations, incidents, or other real-world entities.</li>
+    <li>The screen includes effects such as blackouts, shaking text, flashes, glitch effects, and spiral images. Persons with photosensitive epilepsy should exercise caution.</li>
+    <li>Unauthorized reproduction, redistribution, distribution, or uploading of this software to the Internet is prohibited.</li>
+  </ul>
+<br>
+    <h2>⚠️Notes Regarding Illegal and Pirated Versions</h2>
+  <p>I apologize for bringing up a somewhat unpleasant topic.</p>
+  <p>There was a case where an unauthorized translation and modification of this game was sold without permission on a certain EC platform. A warning regarding this matter has already been issued, and I do not provide any support or respond to inquiries concerning such illegally resold or pirated versions. </p>
+  <p>Any copies sold or distributed outside of <a href="https://kujiranosenaka.booth.pm/" target="_blank">BOOTH</a>, <a href="https://bit.ly/kujiranosenaka" target="_blank">DLsite</a>, and <a href="https://kujiranosenaka.itch.io/" target="_blank">itch.io</a> are unauthorized copies.</p>
+  <p>Game support is limited to official versions purchased through authorized sales platforms. If unreasonable inquiries or requests continue, measures such as reporting the user or restricting their access may be taken.</p>
+  <p>I sincerely appreciate your understanding and cooperation.</p>
+</section>
+
+
+
+
+
+
+      
+      
+    <section class="page" id="ja-install">
+      <h2>🛠️ゲームのインストール・アップデート方法</h2>
+      <h3>新規ユーザーのインストール・既存ユーザーのアップデート方法</h3>
+      <p>新規プレイヤー・既存プレイヤーともに、以下の手順でインストールしてください。</p>
+      <p><font color="#990000"><b>⚠️Part3は旧バージョンのPart1・Part2とは互換性がなく、ゲームは起動しません。必ずPart1・Part2・Part3をすべて最新版(202610 update version)に揃えたうえで、以下の手順に従ってインストールしてください。</b></font></p>
+      <p><font color="#990000"><b>⚠️問題が発生した際にロールバックできるよう、インストール前に必ず旧バージョンのファイルを別途バックアップしてください。（プラットフォームでは、旧バージョンのファイルは再ダウンロードできません）</b></font></p>
+      <br>
+      <ol>
+        <li>最新バージョンの Part1、Part2、Part3 をダウンロードしてください。</li>
+        <li>まずPart1を解凍します。</li>
+        <li>Part2とPart3をそれぞれ解凍し、中にあるすべての <span class="file-name">.rpa</span> ファイルを、Part1フォルダ内の<span class="file-name">game</span>サブフォルダにコピー＆ペーストしてください。</li>
+      </ol>
+      <p><img src="install-1.png" alt="rpaファイルのコピー先" width="500"></p>
+      <ol start="4">
+        <li>ゲームが正常に起動すれば、インストールは完了です。Part3の新しいタイトル画面とBGMが表示されます。</li>
+      </ol>
+      <br><br>
+      <h3>既存のセーブデータをPart3に引き継ぐ方法</h3>
+      <p>旧バージョンのゲームフォルダ内にある<span class="file-name">game</span>フォルダを開き、その中の<span class="file-name">saves</span>フォルダを、Part3まで入れたゲームフォルダ内の<span class="file-name">game</span>フォルダにコピー＆ペーストしてください。必要なセーブファイルのみを個別に移動することも可能です。</p>
+      <p><img src="install-2.png" alt="セーブデータの移行" width="500"></p>
+      <br><br>
+      
+      <h3>セーブデータ移行時のご注意</h3>
+      <ul>
+        <li>念のため、セーブデータの移行とPart3の正常な起動を確認するまでは、旧バージョンのゲームフォルダを削除せず保管しておくことをおすすめします。</li>
+        <li>セーブデータの移動は、ゲームを完全に終了した状態で行ってください。ゲームの起動中に移動すると、データが上書きされたり、破損したりする恐れがあります。</li>
+        <li>ファイルを個別に移動する場合は、<span class="file-name">.save</span>ファイルだけでなく、<span class="file-name">persistent</span>ファイルも一緒に移動してください。（リプレイ記録などを保持したい場合）</li>
+        <li>例外的に、アップデート後、一部のセーブデータで読み込みエラーが発生する場合があります。その際は、実験中・スケジュール進行中・イベント進行中など、異なる場面で作成した別のセーブファイルをお試しください。</li>
+        <li>体験版・アーリーアクセス版・開発中のバージョンなど、正式リリース版ではないバージョンで作成されたセーブデータは、正常に動作しない可能性があります。</li>
+        <li>Part3で進行したセーブデータを、Part1またはPart2までしかインストールされていない状態で読み込もうとした場合（バージョンダウン）、不具合が発生し、ゲームが停止したり、セーブデータが破損したりする恐れがあります。</li>
+      </ul>
+      <br><br>
+      
+      <h3>バージョン間の互換性に関するご注意</h3>
+      <ul>
+      <li>Part 1とPart 2は必ず最新バージョンをご使用ください。 Part 1またはPart 2が最新バージョンでない場合、Part 3との互換性がないため、ゲームを正常に起動することができません。また、新旧バージョンが混在している場合も同様に起動できません。</li>
+      <li>旧バージョンを使用した場合、または旧バージョンと新バージョンを組み合わせて起動した場合、以下のようなエラーメッセージが表示され、ゲームが停止します。ゲームフォルダ内に生成される<span class="file-name">traceback.txt</span>ファイルをご確認ください。サポートが必要な場合、開発者からこのファイルの提出をお願いすることがあります。</li>
+      <p><img src="install-3.png" alt="エラーメッセージ" width="640"></p>
+      <p><img src="install-4.png" alt="エラーメッセージ" width="640"></p>
+      <li>正常に起動するバージョンの組み合わせは下記のとおりです。</li>
+      <p><img src="compatibility-jp.png" alt="エラーメッセージ" width="640"><br>上記のようにバージョンが揃っていない組み合わせの場合、ゲームは起動しません。</p>
+      <li>各プラットフォームのファイルは、PART3の発売日に合わせて2026年10月版に更新されています。</li>
+            <li>同一パートの異なるバージョンを、同一フォルダ内に置かないでください（例：Part2のAバージョンとBバージョンを一つのフォルダに配置する）。ファイル名を変更しても、ファイル内部のコードが重複するため、ゲーム起動時にクラッシュが発生します。</li>
+      <li>体験版・アーリーアクセス版・開発中のバージョンなど、正式リリース版ではないPart1・Part2はPart3との互換性がありません。</li>
+
+
+      </ul>
+      <br>
+      <p>Part3のインストールとセーブデータの移行が完了し、ゲームが正常に動作することを確認した後は、旧バージョンのゲームファイルを削除しても問題ありません。</p>
+      <p>⚠️上記のガイドラインに従わなかったことによって発生した問題については、開発者側では対応いたしかねます。</p>
+      <br>
+
+
+
+
+    </section>
+
+
+
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+      
+    <section class="page" id="en-install">
+      <h2>🛠️Game Installation &amp; Update Instructions</h2>
+            <h3>How to Install for New Users and Update for Existing Users</h3>
+      <p>Both new and existing players should follow the steps below.</p>
+      <p><font color="#990000"><b>⚠️Part 3 requires the latest versions of Part 1 and Part 2 (202610 update version). Older versions of Part 1 and Part 2 are not compatible, and the game will not launch. Please make sure Part 1, Part 2, and Part 3 are all up to date before following the installation steps below.</b></font></p>
+      <p><font color="#990000"><b>⚠️Please back up the previous version’s files separately before installing, so you can roll back if a problem occurs. (Previous versions can no longer be downloaded from the platform.)</b></font></p>
+      <br>
+      <ol>
+        <li>Download the latest versions of Part 1, Part 2, and Part 3.</li>
+        <li>First, extract Part 1.</li>
+        <li>Extract Part 2 and Part 3, then copy and paste all .rpa files from both into the <span class="file-name">game</span> subfolder inside the Part 1 folder.</li>
+      </ol>
+      <p><img src="install-1.png" alt="Where to copy the rpa files" width="500"></p>
+      <ol start="4">
+        <li>If the game launches normally, the installation is complete. You should see the new Part 3 title screen and hear the new BGM.</li>
+      </ol>
+      <br><br>
+      <h3>How to Transfer Existing Save Data to Part 3</h3>
+      <p>Open the <span class="file-name">game</span> folder inside your old game folder, then copy the <span class="file-name">saves</span> folder into the <span class="file-name">game</span> folder of your new installation with Part 3 installed. You may also transfer only the individual save files you need.</p>
+      <p><img src="install-2.png" alt="Where to copy the rpa files" width="500"></p>
+      <br><br>
+      <h3>Important Notes When Transferring Save Data</h3>
+      <ul>
+        <li>As a precaution, I recommend keeping your old game folder until you have confirmed that your save data has been transferred successfully and Part 3 launches normally.</li>
+        <li>Please make sure the game is completely closed before moving save data. Moving files while the game is running may cause data to be overwritten or corrupted.</li>
+        <li>If you transfer save files individually, please move the <span class="file-name">persistent</span> file together with the <span class="file-name">.save</span> files if you want to retain data such as replay records.</li>
+        <li>In rare cases, some save files may fail to load after the update. If this happens, please try another save created at a different point in the game, such as during an experiment, schedule progression, or event.</li>
+        <li>Save data created with non-final versions of the game, such as Demo, Early Access, or development builds, may not work correctly.</li>
+        <li>Do not attempt to load save data that has progressed into Part 3 with an installation that only contains Part 1 or Part 2 (downgrading). Doing so may cause errors, stop the game from running correctly, or corrupt your save data.</li>
+      </ul>
+      <br><br>
+      <h3>Important Notes Regarding Version Compatibility</h3>
+      <ul>
+      <li>Please make sure you are using the latest versions of Part 1 and Part 2. If either Part 1 or Part 2 is not up to date, it will not be compatible with Part 3 and the game will not launch properly. The game will also fail to launch if old and new versions are mixed.</li>
+      <li>If you use an older version or combine old and new versions, an error message like the one below will appear and the game will stop. Please check the <span class="file-name">traceback.txt</span> file generated in the game folder. If support is required, the developer may ask you to provide this file.</li>
+      <p><img src="install-3.png" alt="エラーメッセージ" width="640"></p>
+      <p><img src="install-4.png" alt="エラーメッセージ" width="640"></p>
+
+      <li>The combinations of versions that will launch the game normally are as shown below.</li>
+      <p><img src="compatibility-en.png" alt="combination" width="640"><br>If the versions are mismatched as shown above, the game will not launch.</p>
+  <li>The files on each platform are updated to the October 2026 version in accordance with the release of PART3. </li>
+    <li>Do not place different versions of the same part in the same folder (for example, placing Part 2 version A and version B in one folder). Even if you rename the files, the code inside them will still conflict, and the game will crash on startup.</li>
+    <li>Demo, Early Access, development, or other non-final versions of Part 1 and Part 2 are not compatible with Part 3.</li>
+  </ul>
+      <br>
+      <p>Once you have completed the Part 3 installation and save-data transfer and confirmed that the game is working correctly, you may safely delete the old version of the game.</p>
+      <p>⚠️The developer cannot provide support for any issues arising from failure to follow the guidelines above.</p>
+      
+
+    </section>
+      
+
+
+      <section class="page" id="ja">
+        <h2>📄既存ゲームのアップデートまとめ</h2>
+        <p>■ Part1（メインゲーム）およびPart2に、以下のアップデートを行いました。</p>
+        <ul>
+          <li>コードの改善、およびゲーム進行に関する変数の調整</li>
+          <li>一部CGの差し替え（クオリティ改善のためのリドローを含む）</li>
+          <li>一部サウンドファイルの差し替え、および音質・音量の調整</li>
+          <li>一部の誤字・脱字の修正（日本語版基準）</li>
+          <li>一部スクリプトの追加（キャラクタープロフィール、柔道試合など）</li>
+          <li>メニュー画面およびBGMの変更</li>
+          <li>「番外編」メニューを削除し、本編ストーリーに統合</li>
+          <li>Partごとのカバーページ閲覧機能を追加（PATCHメニューをご参照）</li>
+          <li>マウスホイールモードを追加（CONFIGメニューをご参照）</li>
+          <li>その他のバグ・不具合の修正</li>
+        </ul>
+        <p>■ Part間のCGデータを分離</p>
+        <p>これまでは、Part1で最初に登録された一部のCGアセットがPart2でも使用される場合、Part2側に同じ画像を別途収録するのではなく、Part1に収録されている画像をそのまま参照する仕組みになっていました。しかし、各Part、および各販売プラットフォームに対応するCGデータは分けて管理するのが適切であり、各プラットフォームの規約にも合わせる必要があるため、今回この仕組みを修正しました。</p>
+        <p>この変更は、Part2以降でも繰り返し登場する一部のCG（立ち絵・スプライトなど）に限定して適用しています。一方で、一度だけ登場する一部の回想シーンなど、過去のイベントシーン全体をそのまま参照する場合には、この分離処理が適用されないことがありますので、あらかじめご了承ください。</p>
+        <p>この仕組みについては、私自身も文章だけでは少し説明しづらい部分がありますので、詳しくは下記の図をご参照ください。</p>
+        <p><img src="cg-split.png" alt="CG分離の説明" width="800"></p>
+        <p>現在（2026年時点）は、CGの異なるバージョンを販売していないため、今後このケースは発生しません。</p>
+      </section>
+      <section class="page" id="en">
+        <h2>📄Summary of Updates to Previous Parts</h2>
+        <p>■ Part 1 (Main Game) and Part 2 have been updated with the following changes.</p>
+        <ul>
+          <li>Improved code and adjusted variables related to game progression</li>
+          <li>Replaced some CGs (redrawn/replaced for quality improvements)</li>
+          <li>Replaced some sound files and adjusted audio quality and volume</li>
+          <li>Fixed some typos and text errors (based on the Japanese version)</li>
+          <li>Added some scripts and content (character profiles, judo matches, etc.)</li>
+          <li>Updated menu screens and BGM</li>
+          <li>Removed the “Extra Story” menu and integrated its content into the main story</li>
+          <li>Added an option to view cover pages for each Part (see the PATCH menu)</li>
+          <li>Added mouse-wheel mode (see the CONFIG menu)</li>
+          <li>Fixed various other bugs and issues</li>
+        </ul>
+        <p>■ Separation of CG Assets Between Parts</p>
+        <p>Previously, when certain CG assets originally registered in Part 1 were also used in Part 2, Part 2 referenced the assets from Part 1 instead of including separate copies. In principle, however, CG assets should be clearly separated by Part and distribution platform. To better comply with each platform’s policies wherever possible, this structure has now been revised.</p>
+        <p>This change applies mainly to certain CGs that appear repeatedly from Part 2 onward, such as standing character sprites. It may not apply to some one-time flashback scenes that reference an entire previous event scene.</p>
+        <p>Since this system is somewhat difficult to explain in text alone, please refer to the diagram below for a clearer explanation.</p>
+        <p><img src="cg-split.png" alt="CG asset separation" width="800"></p>
+        <p>As of 2026, versions with different CGs are no longer being sold, so this issue will not apply going forward.</p>
+      </section>
+
+
+
+      <section class="page" id="ja-uncensored">
+        <h2>🔞無修正版の販売終了に関するご案内</h2>
+
+
+        <p>審査上の都合により、今後ゲームは日本のプラットフォームでのみ販売し、「修正版」のみを取り扱うことになりました。本作のメインテーマである「催〇」に加え、一部のセンシティブな要素（近〇相〇、レ〇プなど）が、グローバルプラットフォームの審査基準において「性的暴力（同意のない性的行為など）」に関連するカテゴリーに含まれるため、昨年itch.ioで販売停止となった経緯があり、同様の理由から、いくつかのプラットフォームからも取り扱いが難しい旨の連絡を受けています。これは個別の販売プラットフォームの規約だけでなく、決済事業者（クレカ会社など）の規定が欧米を中心とする市場全体に強い影響を及ぼしているという、より大きな外部環境の変化によるものです。何卒ご理解いただけますようお願いいたします。</p>
+
+        <blockquote style="margin: 1em 0; padding: 0.9em 1.1em; background: #f2f2f2; border-left: 4px solid #bdbdbd;">
+  <p style="margin: 0;">「決済代行会社およびカードネットワークの規定では、『催眠』や『マインドコントロール』は収益化に不適切なテーマとされています。そのため、VisaまたはMastercardに対応しているプラットフォームでは、これらのテーマに関連するコンテンツを公開することはできません。」</p>
+  <footer style="margin-top: 0.6em; color: #666; font-size: 0.9em;">SubscribeStarサポートからの回答としてオンライン上で紹介されている英文からの抜粋・翻訳</footer>
+</blockquote>
+
+
+<p>なお、審査ではコンテンツ全体が総合的に判断されるものと理解しておりますので、単に「催〇」の要素が含まれていることだけを理由に、すべてのクリエイターに同じ判断が適用されるとは限りません。ただし、本作には催〇に加え、レ〇プ、拉〇、近〇相〇などの危険要素も多数含まれているため、作品全体の内容を踏まえて審査されたものと考えています。</p>
+
+
+        <p>また、FANBOXでは、クリエイターによる「無修正コンテンツ」への誘導、言及、示唆が厳しく禁止されています。これに違反した場合、規約上アカウントの運営に支障が生じる可能性があるため、規約に抵触する可能性のある内容を含むご質問には、申し訳ありませんが対応いたしかねます。[<a href="https://www.reddit.com/r/Pixiv/comments/1u7bmgi/am_i_crazy_dont_people_do_this_all_the_time_let/" target="_blank">Link</a>]</p>        
+        <p>ご理解いただきありがとうございます。</p>
+
+        <br><br>
+        <h2>🔞日本のプラットフォームにおけるモザイク規定 （BOOTH）</h2>
+        <p>海外のユーザーの方からは、日本のモザイク処理に関するガイドラインに馴染みがなく、お問い合わせをいただくことが多いため、関連する規定を掲載します。<a href="https://booth.pm/guidelines" target="_blank">BOOTHのガイドライン</a></p>
+
+      
+      <blockquote class="policy">
+      <strong>■ 隠蔽処理（モザイク処理）の方法</strong>
+      <ul>
+      <li>視覚的判断により細部が不明瞭な状態とする</li>
+      <li>同一次元上で処理を施し、技術的に元の表現に戻せない状態のものとする</li>
+      <li>範囲は輪郭線を含んだ状態とする</li>
+      <li>処理が施されていても透過により細部が明瞭になっているものは隠蔽に含まれない</li>
+      <li>モザイクは以下を参考に不明瞭化する</li>
+      <li>最小4ピクセル平方モザイクかつ画像全体の長辺が400ピクセル以上の場合、必要部位に画像全体長辺×1/100程度を算出したピクセル平方モザイクとする</li>
+      <li>べた塗りにおいては隠蔽処理が必要な部分にすべて行うことが前提であるが、一部の処理により結果として不明瞭になる場合はこの限りではない</li>
+      <li>白液、その他隠蔽を絵柄により表現する場合、隠蔽処理が必要な部分にすべて行うことが前提であるが、一部の処理により結果として不明瞭になる場合はこの限りではない</li>
+      </ul>
+      </blockquote>
+      <blockquote class="policy">
+      <strong>■ 隠蔽処理（モザイク処理）が必要な箇所の例</strong>
+      <ul>
+      <li>性器または性器を連想する部位</li>
+      <li>性器結合部位及び挿入部位</li>
+      <li>アヌス結合部位及び挿入部位</li>
+      <li>切断、裂傷等においていたずらに詳細かつ過度に表現されている部位</li>
+      </ul>
+      </blockquote>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p><a href="https://cs-circle.dlsite.com/hc/ja/articles/1500003278402-%E6%80%A7%E5%99%A8%E7%AD%89%E3%81%AE%E4%BF%AE%E6%AD%A3%E3%81%AF%E5%BF%85%E3%81%9A%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF%E3%81%A7%E3%81%AA%E3%81%84%E3%81%A8%E3%83%80%E3%83%A1%E3%81%A7%E3%81%99%E3%81%8B-%E9%BB%92%E7%B7%9A%E3%82%84%E7%99%BD%E6%B6%88%E3%81%97%E3%81%A7%E3%81%AF%E3%83%80%E3%83%A1%E3%81%A7%E3%81%99%E3%81%8B" target="_blank">DLsiteの推奨事項</a>に従い、黒線や白消による修正は適用していません。現在、ゲームでは長辺1000pxの画像を使用しているため、1/100＝10pxが適用されます。</p>
+
+      </section>
+
+
+
+
+      
+      <section class="page" id="en-uncensored">
+        <h2>🔞Discontinuation of the Uncensored Version</h2>
+
+        <p>Due to review-related circumstances, the game will henceforth be sold only on Japanese platforms, and only the “revised version” will be available.
+
+In addition to the main theme of the game, “hypnosis,” some sensitive elements (incest, rape, etc.) fall under categories related to “sexual violence (such as non-consensual sexual acts)” under the review standards of global platforms. As a result, the game was removed from sale on ITCH.IO last year, and for the same reason, several other platforms have also informed that it would be difficult for them to carry the game.
+
+This is due to broader changes in the external environment, in which not only the policies of individual sales platforms but also the regulations of payment providers (such as credit card companies) are having a significant impact on the market as a whole, particularly in Western markets. Thank you for your understanding.</p>
+
+<blockquote style="margin: 1em 0; padding: 0.9em 1.1em; background: #f2f2f2; border-left: 4px solid #bdbdbd;">
+  <p style="margin: 0;">“According to payment processors and card networks, “hypnosis” and “mind control” are considered unacceptable topics for monetization. Therefore, content related to these themes cannot be published on platforms that accept Visa or Mastercard.”</p>
+  <footer style="margin-top: 0.6em; color: #666; font-size: 0.9em;">Reported reply from SubscribeStar support (excerpted online)</footer>
+</blockquote>
+
+<p>I understand that content is evaluated in its overall context, so the mere inclusion of hypnosis as a theme does not necessarily mean that the same decision will apply to all creators. However, this game contains not only hypnosis but also numerous controversial elements, including rape, kidnapping, and incest. I therefore believe that the review took the overall content of the game into account.</p>
+
+        <p>FANBOX also strictly prohibits creators from directing anyone to uncensored content, or from mentioning or implying it. A violation may interfere with account operation under the terms of service, so questions that could conflict with those rules cannot be answered. [<a href="https://www.reddit.com/r/Pixiv/comments/1u7bmgi/am_i_crazy_dont_people_do_this_all_the_time_let/" target="_blank">Link</a>]</p>
+
+        
+        <p>Thank you for your understanding.</p>
+        <br><br>
+        <h2>🔞Mosaic Regulations for Japanese Platforms (BOOTH)</h2>
+        <p>As many overseas users are unfamiliar with Japan’s guidelines on mosaic censorship, the relevant regulations are provided below. (<a href="https://booth.pm/guidelines" target="_blank">BOOTH Guidelines</a>)</p>
+
+<blockquote class="policy">
+<strong>■ How to Apply Concealment Processing (Mosaic)</strong>
+<ul>
+<li>Make the details visually indistinguishable.</li>
+<li>The processing must be applied on the same layer/dimension, making it technically impossible to restore the original representation.</li>
+<li>The processed area must include the outlines.</li>
+<li>Even if processing has been applied, it is not considered concealment if the details remain clearly visible through transparency.</li>
+<li>For mosaic processing, make the details indistinguishable according to the following guidelines.</li>
+<li>Use a minimum 4-pixel-square mosaic, and when the longer side of the entire image is 400 pixels or more, use a pixel-square mosaic approximately 1/100 of the longer side of the entire image for the areas requiring concealment.</li>
+<li>For solid-color covering, concealment processing must in principle be applied to all areas requiring concealment; however, this does not apply when some areas become indistinguishable as a result of the processing of other areas.</li>
+<li>When using white fluid or other concealment represented through the artwork itself, concealment processing must in principle be applied to all areas requiring concealment; however, this does not apply when some areas become indistinguishable as a result of the processing of other areas.</li>
+</ul>
+      </blockquote>
+      <blockquote class="policy">
+<strong>■ Examples of Areas Requiring Concealment Processing (Mosaic)</strong>
+<ul>
+<li>Genitals or areas suggestive of genitals</li>
+<li>Areas of genital contact and penetration</li>
+<li>Areas of anal contact and penetration</li>
+<li>Areas depicting cuts, lacerations, or similar injuries in an unnecessarily detailed or excessive manner</li>
+</ul>
+</blockquote>
+
+
+        <p>In accordance with <a href="https://cs-circle.dlsite.com/hc/en-us/articles/1500003278402-Does-censorship-of-sexual-organs-have-to-be-via-mosaic-Are-black-lines-blanks-acceptable" target="_blank">DLsite’s recommendations</a>, black-line or white-out censorship is not applied. Since the game currently uses images with a longest side of 1,000 pixels, the 1/100 rule results in a 10-pixel mosaic.</p>
+
+        
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="page" id="ja-branch">
+        <h2>🔀ストーリーの分岐について</h2>
+        <p>Part 3からは、今後のPart 4のエンディングに向けて、一部の区間でストーリーが分岐します。ただし、一度見たイベントはリプレイに永久的に登録され、その後別の分岐を選択しても消えることはありません。そのため、すべてのイベントを回収したい場合は、分岐直前でセーブし、両方の分岐のイベントを見た後、再び分岐前のセーブデータをロードして、最終的に進みたいルートを選択してください。分岐が発生する場面では、別途案内メッセージが表示されます。</p>
+        <p>なお、Part 2までの内容には最終エンディングに影響する分岐はありませんので、以前のPartに戻ってやり直す必要はありません。</p>
+        <p>分岐によるストーリー展開の違いについては、事前に知りたくない方にとってネタバレとなる可能性があるため、このページには掲載しておりません。</p>
+
+        
+      </section>
+      <section class="page" id="en-branch">
+        <h2>🔀Story Branches</h2>
+        <p>Starting from Part 3, the story will branch at certain points in preparation for the endings in Part 4. However, once you have viewed an event, it will be permanently registered in the Replay and will remain there even if you later choose a different branch. Therefore, if you would like to collect all events, save your game just before a branch, view the events from both branches, then reload your save from before the branch and choose the route you ultimately wish to continue with. A separate notification will appear whenever you reach a branching point.</p>
+        <p>Please note that there are no choices or branches in Parts 1–2 that affect the final ending, so there is no need to go back and replay the earlier Parts.</p>
+        <p>Details about how the story differs between branches are not included in this page, as they may contain spoilers for those who prefer not to know in advance.</p>
+      </section>
+
+
+
+
+      <section class="page" id="ja-events">
+        <h2>🔓各Partの全イベント発生条件について</h2>
+        <p>この部分について混乱される方もいらっしゃるかと思いますので、できるだけ簡単に整理してご説明します。本作では、前日の先行イベントが、翌日のイベント発生条件となる仕組みが一部含まれています。そのため、各Partの最終日である土曜日に、そのPartでの最大催眠深度に到達した場合でも、翌日の日曜日にはそのPartが終了するため、それに対応するイベントは発生しません。</p>
+        <p>各Part内で最後のイベントを見るためには、以下の時点までに目標となる催眠深度に到達する必要があります。</p>
+        <ul>
+          <li>Part 1： 金曜日（5日目）終了時点までに 20％に到達</li>
+          <li>Part 2： 金曜日（12日目）終了時点までに 50％に到達</li>
+          <li>Part 3： 金曜日（19日目）終了時点までに 80％に到達</li>
+        </ul>
+        <p>つまり、進行の流れは以下のようになります。</p>
+        <ul>
+          <li>Part 1： 金曜日（5日目）に 20％達成 → 土曜日（6日目）に最後のイベント発生 → 日曜日（7日目）にエンディング</li>
+          <li>Part 2： 金曜日（12日目）に 50％達成 → 土曜日（13日目）に最後のイベント発生 → 日曜日（14日目）にエンディング</li>
+          <li>Part 3： 金曜日（19日目）に 80％達成 → 土曜日（20日目）に最後のイベント発生 → 日曜日（21日目）にエンディング</li>
+        </ul>
+        <p>もちろん、これはストーリーがひとつにつながっているゲームを複数のPartに分けてリリースしていることによって、一時的に生じているものです。例えば、Part 1の土曜日に20％へ到達し、該当イベントを見ないままPart 1が終了した場合でも、Part 2をインストールした後、同じセーブデータから続きをプレイすれば、そのイベントは翌日に問題なく発生します。また、今後すべてのPartがインストールされた状態では、このようなPartごとの進行制限は適用されなくなります。ゲームの進行上の仕組みとして、これを短い文章だけで説明するのは難しく、かえって混乱を招いてしまう可能性もありますので、詳しい仕組みが気になる方のみ参考にしていただければと思います。</p>
+        <p>また、1週間が終了する前に各Partの上限となる催眠深度を超えて、さらに高い数値に到達したとしても、別途追加イベントが発生するわけではなく、100％に到達したからといってすぐにエンディングが発生するわけでもありません。本作は、100％に到達したら終わる、という作りではなく、最終的な達成度によってエンディングが分かれる予定です。そのため、最終Partがリリースされるまでは、無理にステータスを最大まで上げる必要はありません。</p>
+      </section>
+      <section class="page" id="en-events">
+        <h2>🔓Conditions for viewing all events in each Part</h2>
+        <p>Since this part may be a little confusing, I’ll try to explain it as simply as possible. Some events in the game are structured so that an event on the previous day acts as the trigger for an event on the following day. Because of this, even if you reach the maximum Hypno-depth for a Part on its final Saturday, the corresponding event will not occur on Sunday because that Part ends on that day.</p>
+        <p>To see the final event within each Part, you need to reach the required Hypno-depth by the following points:</p>
+        <ul>
+          <li>Part 1: Reach 20% by the end of Friday (Day 5)</li>
+          <li>Part 2: Reach 50% by the end of Friday (Day 12)</li>
+          <li>Part 3: Reach 80% by the end of Friday (Day 19)</li>
+        </ul>
+        <p>In other words, the progression works as follows:</p>
+        <ul>
+          <li>Part 1: Reach 20% on Friday (Day 5) → Final event occurs on Saturday (Day 6) → Ending on Sunday (Day 7)</li>
+          <li>Part 2: Reach 50% on Friday (Day 12) → Final event occurs on Saturday (Day 13) → Ending on Sunday (Day 14)</li>
+          <li>Part 3: Reach 80% on Friday (Day 19) → Final event occurs on Saturday (Day 20) → Ending on Sunday (Day 21)</li>
+        </ul>
+        <p>Of course, this is only a temporary effect of releasing one continuous story in separate Parts. For example, even if you reach 20% on Saturday in Part 1 and the Part ends before the corresponding event occurs, once Part 2 is installed, you can continue from the same save file and the event will occur normally on the following day. Once all Parts are installed in the future, these Part-specific progression cutoffs will no longer apply. Because of the way the game’s progression system works, it is difficult to explain this accurately in just a short sentence, and a detailed explanation may actually make things more confusing. Please consider this additional information only for those who are interested in how the system works.</p>
+        <p>Also, reaching a higher percentage than the Hypno-depth limit for each Part before the end of the week does not trigger any additional events, nor does reaching 100% immediately trigger an ending. The game is planned to have multiple endings based on your final progress, rather than a single ending that simply requires reaching 100%. Therefore, there is no need to push your stats as high as possible before the final Part is released.</p>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page" id="ja-support">
+  <h2>❓お問い合わせ・サポート</h2>
+
+  <p>■ 一般的なゲームのバグ報告やゲームの進行に関するお問い合わせは、FANBOXをご利用ください。</p>
+
+  <p>■ ただし、個別対応が必要と判断した場合は、ご購入されたプラットフォーム経由でのご連絡をお願いすることがございます。その際、購入確認の手続きを行う場合がありますので、あらかじめご了承ください。</p>
+  <ul>
+    <li>BOOTH：ストアの「✉メッセージ」をご利用ください。</li>
+    <li>DLsite：<a href="https://cs.dlsite.com/hc/ja/requests/new" target="_blank">DLsite公式ヘルプデスク</a>（DLsiteにて一次確認を行った後、必要に応じて販売者へ連絡が行われます。）</li>
+  </ul>
+    <p>■ お問い合わせが集中した場合、個別のご返信が難しくなることがあります。個別の対応が不要な一般的なお問い合わせ（例：イベントシーンの解放方法など）については、FANBOXまたはDiscordのユーザーコミュニティをご利用ください。Pixiv DMやSNSなどでは、個別のお問い合わせを受け付けておりません。</p>
+  <p>■ ユーザー同士でゲーム攻略情報を共有できるDiscordコミュニティを運営しています（FANBOX支援者限定）。</p>
+  <p>■ 先日、BOOTH事務局から不正行為に関する注意喚起がありました。BOOTHの販売者側ではメッセージを送信された方の注文履歴を確認することが可能です。BOOTHでメッセージを送信される方は、以下の注意事項をご確認のうえ、必ずご購入いただいたアカウントでログインしてからお問い合わせください。</p>
+  <p><a href="https://booth.pm/announcements/892" target="_blank">https://booth.pm/announcements/892</a></p>
+<br>
+      <p>■ <b>以下の場合は、開発者によるサポートが難しい場合があります。</b></p>
+      <ul>
+        <li>ガイドに従わなかったことによって発生した問題</li>
+        <li>個々のユーザーのPC環境に起因する問題（例：多くのユーザーに共通して発生していない問題）</li>
+        <li>開発者が問題を把握するために必要な情報が十分に提供されていないお問い合わせ</li>
+        <li>ユーザー側の事情により、最新のPart1・Part2を入手できない場合</li>
+        <li>ファイルの個別送付または無修正版のご要望</li>
+        <li>海賊版、または改造されたファイルに起因する問題</li>
+        <li>その他、不当な要求や迷惑行為と判断される場合（場合により運営へ報告）</li>
+      </ul>
+
+  
+</section>
+
+
+
+      
+<section class="page" id="en-support">
+  <h2>❓Inquiries &amp; Support</h2>
+
+  <p>■ For general game bug reports and inquiries regarding game progression, please use FANBOX. </p>
+
+  <p>■ However, if individual assistance is required, you may be asked to contact the developer through the platform where the game was purchased. If deemed necessary, a purchase verification process may be conducted. </p>
+  <ul>
+    <li>BOOTH：Please use the store’s “✉ Contact this Shop (Message)” feature.</li>
+    <li>DLsite：<a href="https://cs.dlsite.com/hc/en-us/requests/new" target="_blank">DLsite Official Help Desk</a> (DLsite will check the inquiry first and contact the seller if necessary.)</li>
+  </ul>
+  <p>■ Handling a large number of individual inquiries may be difficult and slow. For questions that do not need a private reply (e.g., how to unlock replay scenes), please use FANBOX or share your questions on the Discord community. Individual inquiries via Pixiv DMs or other social networks are not being accepted.</p>
+  <p>■ Discord community is available where users can share game guides and tips (FANBOX subscribers only).</p>
+    <p>■ Recently, BOOTH issued a warning regarding fraudulent activity. BOOTH sellers can view the purchase history of message senders. Those contacting via BOOTH must review the following precautions and log in with the account used to purchase the game.</p>
+    <p><a href="https://booth.pm/announcements/892" target="_blank">https://booth.pm/announcements/892</a></p>
+
+
+<br>
+  
+      <p>■ <b>Developer support may not be available for the following cases:</b></p>
+      <ul>
+        <li>Issues caused by not following the guide</li>
+        <li>Issues caused by the user's individual PC environment (for example, issues that do not occur commonly among users)</li>
+        <li>Inquiries that do not provide sufficient information for the developer to identify or understand the issue</li>
+        <li>Cases where the latest versions of Part 1 or Part 2 cannot be obtained due to user-side issues</li>
+        <li>Requests for individual file delivery or an uncensored version</li>
+        <li>Inquiries or issues caused by pirated versions or modified game files</li>
+        <li>Other unreasonable demands or disruptive behavior (may be reported to the admin)</li>
+        <br>
+      </ul>
+  
+</section>
+
+
+
+      
+<section class="page" id="faq-ja">
+  <h2>FAQ</h2>
+  <ul>
+
+<li class="q"><b>Q.</b> 全部で何パートまで予定していますか？</li>
+<li><b>A.</b> 4つのパートを予定しています。ゲーム内の時間は1パートにつき1週間で、4パート合計で約1か月分です。</li>
+
+<li class="q"><b>Q.</b> 次のパートはいつ発売されますか？</li>
+<li><b>A.</b> 現時点では、続編の開発スケジュールはまだ決まっておりません。個人で趣味としてゲームを制作しているため、個人的な事情や本業などの都合により、開発スケジュールが変更されたり、しばらく中断されたりする場合もあり、正確な予測は困難です。そのため、確約できない開発スケジュールの発表は行っておりません。今後、開発を再開した際には、FANBOXにWIPを掲載する予定ですので、それまで気長にお待ちいただけますと幸いです。</li>
+
+<li class="q"><b>Q.</b> FANBOXの上位プランやその他のサブスクリプションサービスのプランでゲームを販売することはできませんか？</li>
+<li><b>A.</b> このゲームは新しいパートを出すたびに、既存パートもあわせて更新しています。そのため、一度購入したファイルをライブラリに残し、あとから差し替えられるBOOTHやDLsiteのような販売形態が必要です。FANBOXの上位プランや、他のサブスクリプション型・買い切り型の販売形態では、更新のたびに再配布や再購入が必要になり、この作品には向きません。また、主要なサブスクリプションサービスの多くでは、催眠などのNON-CON表現について、itch.ioと同等かそれ以上に厳しい基準で規制された事例
+  
+  (<a href="https://www.reddit.com/r/patreon/comments/1jppubv/is_hypnosis_allowed_or_not_i_see_the_rule_but/" target="_blank">１</a>,
+<a href="https://www.gamesmarket.global/subscribestar-changes-tos-towards-stricter-adult-media-bans/" target="_blank">２</a>,
+<a href="https://techcrunch.com/2024/03/15/gumroad-no-longer-allows-most-nsfw-art-leaving-its-adult-creators-panicked/"target="_blank">３</a>,
+<a href="https://web.archive.org/web/20231004111819/https://cashmeremag.com/patreon-hypnosis-porn-ban-sexual-violence-592952/" target="_blank">４</a>)
+  
+  があり、削除されるリスクも高くなります。購入後に履歴が消えたり、更新を受け取れなくなったりしてご不便をおかけしないための判断ですので、ご理解いただけますと幸いです。
+
+
+
+
+</li>
+
+<li class="q"><b>Q.</b> 修正版のゲームファイル内に、無修正のオリジナル画像が含まれていますか？</li>
+<li><b>A.</b> ゲーム内の画像には、あらかじめモザイク処理を施しています。BOOTHとDLsiteでは、同一レイヤー上でモザイク処理を施すことが規定されています。審査過程では、ゲーム内に表示されないダミー画像まで担当者が確認する場合もあるため、無修正の画像をファイルに含めることはできません。そのため、特定のコードを書き換えたり、ファイルを分解したりしても、モザイクが外れることはありません。</li>
+    
+<li class="q"><b>Q.</b> 他の言語への対応予定はありますか？</li>
+<li><b>A.</b> 現在は日本語と英語のみで公開しており、他の言語への対応は予定していません。多くの国の方に遊んでいただけていることは、大変ありがたく思っております。ただ、こちらで内容を確認できない言語では、訳の誤りやファイルの不具合があったときに対応が難しく、限界があります。ご理解いただけますと幸いです。現在公開されている韓国語・中国語などの非公式翻訳は、ネイティブスピーカーの皆さまによる非営利のファン翻訳であり、販売している製品には含まれていません。</li>
+
+<li class="q"><b>Q.</b> なぜ、アップデートのたびに全パートを新しいファイルで入れ直す必要があるのですか？</li> 
+<li><b>A.</b> 各パートは、変数やコード、素材が互いに結びついて動いています。開発が進むと全体の構造も複雑になり、パート3を作っている途中で、パート1や2の変数・コード・素材を直すこともあります。そのため、バージョンの違うファイルを混ぜてプレイすると、食い違ったコードや素材が原因でNOT FOUND ERRORが出て、強制終了することがあります。これを防ぐため、バージョンを混ぜて遊べないようにしています。ご理解いただけますと幸いです。更新のたびに入れ直すのが負担に感じる方は、シリーズ完結後にまとめてプレイしていただけると助かります。</li>
+
+<li class="q"><b>Q.</b> DLsite版は、なぜ他のプラットフォームより遅れてリリースされるのですか？  </li> 
+<li><b>A.</b> DLsiteでは、審査申請の準備とプラットフォーム側の審査に時間がかかるため、Part 3の公開までお待ちいただけますと幸いです。DLsiteではファイルの差し替えにも担当者による確認・対応が必要なため、差し替えを繰り返さないよう、BOOTH版がある程度安定してから審査を申請しています（手続きには場合によって数週間から1か月以上かかることもあります）。ただし、BOOTH版のPart 3と互換性を確保するため、DLsiteのPart 1・2は先に差し替えを完了しています。商品ページの更新履歴をご確認ください。</li>
+
+<li class="q"><b>Q.</b> itch.ioで購入したPart 1・2は今後も更新されますか？  </li> 
+<li><b>A.</b> itch.ioでの販売は停止していますが、Part 1・2のファイルは、シリーズ完結まで後続パートとの互換性を確保するために引き続き更新する予定です。ご購入済みの方は、ライブラリから削除せず、そのまま残しておいてください。ファイルを更新しても、itch.io版のグラフィック素材は従来のものを維持します。</li>
+
+
+
+
+    
+  </ul>
+</section>
+
+
+<section class="page" id="faq-en">
+  <h2>FAQ</h2>
+  <ul>
+<li class="q"><b>Q.</b> How many parts are planned in total?</li>
+<li><b>A.</b> Four parts are planned. In-game time covers one week per part, for a total of about one month across all four parts. </li>
+
+
+<li class="q"><b>Q.</b> When will the next part be released?</li>
+<li><b>A.</b> At this time, the development schedule for the next part has not yet been decided. The game is developed by a solo indie developer as a hobby, so the development schedule may change or be put on hold for an extended period due to personal circumstances, work, or other commitments, making it difficult to predict accurately.For this reason, I do not announce development schedules that I cannot guarantee. When development resumes, WIP updates will be posted on FANBOX. I would appreciate your patience until then.</li>
+
+<li class="q"><b>Q.</b> Is it possible to sell the game through higher-tier FANBOX plans or other subscription services?</li>
+<li><b>A.</b> Since existing parts of this game are also updated whenever a new part is released, it is important that a purchased game remain in the library, as on BOOTH and DLsite. Monthly plans and one-time purchases would require buying the game again after a later update, so they are not a suitable sales format for this game. In addition, there have been cases where many major subscription services have imposed restrictions on NON-CON content(<a href="https://www.reddit.com/r/patreon/comments/1jppubv/is_hypnosis_allowed_or_not_i_see_the_rule_but/" target="_blank">１</a>,
+<a href="https://www.gamesmarket.global/subscribestar-changes-tos-towards-stricter-adult-media-bans/" target="_blank">２</a>,
+<a href="https://techcrunch.com/2024/03/15/gumroad-no-longer-allows-most-nsfw-art-leaving-its-adult-creators-panicked/"target="_blank">３</a>,
+<a href="https://web.archive.org/web/20231004111819/https://cashmeremag.com/patreon-hypnosis-porn-ban-sexual-violence-592952/" target="_blank">４</a>), including hypnosis, under standards as strict as or stricter than those of itch.io, increasing the risk of the game being removed. This is to avoid inconvenience for you later, such as the loss of purchase records. Your understanding is appreciated.</li>
+
+<li class="q"><b>Q.</b> Are any uncensored original images hidden in the modified game files?</li>
+<li><b>A.</b> Mosaic censorship is applied to the images themselves, as both BOOTH and DLsite require the mosaic to be applied on the same layer. During the review process, platform staff may check every image individually, including dummy images that are not displayed in the game, so uncensored images cannot be included in the game files. Replacing certain code in the current files, or extracting and unpacking the game files, will not remove the mosaic.</li>
+
+
+    
+<li class="q"><b>Q.</b> Are there any plans to support other languages?</li>
+<li><b>A.</b> The game is currently released in Japanese and English only, with no plans to add other languages. It is deeply appreciated that players in many countries are enjoying it. However, with languages that cannot be read at all, translation errors and file issues are difficult to check, and there are limits to what can be handled. Your understanding is appreciated. Unofficial translations currently available (such as Chinese by koi-san) are fan translations contributed non-commercially by native-speaker players, and are not included in the paid product. </li>
+
+<li class="q"><b>Q.</b> Why is it necessary to install all parts using the new files every time there is an update?</li>
+<li><b>A.</b> Each part of this game relies on various variables, code, and assets that are interconnected. As development progresses, the overall size and structure of the game become more complex, and I sometimes go back to Part 1 or Part 2 during the development of Part 3 to modify variables, code, assets, and other elements. For this reason, playing with different versions mixed together can cause NOT FOUND ERRORs due to incompatible code or assets, which may force the game to stop during play. To prevent these problems, playing with mixed versions is not supported. I kindly ask for your understanding. If reinstalling all parts with every update feels burdensome, I recommend waiting until the series is complete and playing the entire series at once.</li>
+
+
+<li class="q"><b>Q.</b> Why is the DLsite version released later than on other platforms?</li> 
+<li><b>A.</b> On DLsite, preparation for the review application and the platform’s own review take time, so please wait a little longer for Part3 release. File replacements on DLsite also require staff review and processing, so the review application is submitted after the BOOTH version has been confirmed to be reasonably stable, in order to avoid repeatedly replacing the file. This process may take anywhere from a few weeks to over a month. However, to ensure compatibility with BOOTH Part 3, the Part 1 and Part 2 files on DLsite is updated first. Please refer to the product page’s update history. </li>
+
+<li class="q"><b>Q.</b> Will Part 1 and Part 2 purchased on itch.io continue to be updated?</li> 
+<li><b>A.</b> Sales on itch.io have been discontinued, but the Part 1 and Part 2 files will continue to be updated until the series is completed to ensure compatibility with future parts. Purchasers are requested to maintain their library records. Even after updates, the graphic assets of the ITCH.IO versions will remain unchanged.</li>
+
+
+
+
+
+
+
+    
+  </ul>
+</section>
+
+      
+
+
+
+
+
+
+      
+
+    
+      
+    </main>
+  </div>
+
+  <script>
+    function show(id) {
+      document.querySelectorAll(".page").forEach(function (el) {
+        el.classList.toggle("active", el.id === id);
+      });
+      document.querySelectorAll("nav button").forEach(function (btn) {
+        btn.classList.toggle("active", btn.getAttribute("data-page") === id);
+      });
+      history.replaceState(null, "", "#" + id);
+      var page = document.getElementById(id);
+      var main = document.querySelector("main");
+      if (window.matchMedia("(max-width: 800px)").matches) {
+        requestAnimationFrame(function () {
+          if (page) page.scrollIntoView({ block: "start" });
+        });
+      } else if (main) {
+        main.scrollTop = 0;
+      }
+    }
+    document.querySelectorAll("nav button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        show(btn.getAttribute("data-page"));
+      });
+    });
+    var initial = location.hash.replace("#", "");
+    if (document.getElementById(initial)) show(initial);
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: "ja",
+    includedLanguages: "ko,zh-CN,zh-TW",
+    autoDisplay: false
+  }, "google_translate_element");
+}
+
+function setLang(lang) {
+  var current = (document.cookie.match(/googtrans=\/ja\/([^;]+)/) || [])[1];
+  if (current === lang) {
+    document.cookie = "googtrans=; path=/; max-age=0";
+    document.cookie = "googtrans=; path=/; domain=" + location.hostname + "; max-age=0";
+  } else {
+    document.cookie = "googtrans=/ja/" + lang + "; path=/";
+    document.cookie = "googtrans=/ja/" + lang + "; path=/; domain=" + location.hostname;
+  }
+  location.reload();
+}
+
+document.querySelectorAll(".gt").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    setLang(btn.getAttribute("data-lang"));
+  });
+});
+
+  </script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
